@@ -39,13 +39,13 @@ const ChartCompo = () => {
     }, [coinData]);
 
   return (
-    <div className='h-[711px] w-[881px] rounded-lg bg-white p-0 pb-20 flex flex-col gap-[20px] '>
-        <div className='h-[40px] w-[full] flex flex-row items-center mt-[24px] ml-[24px] gap-[40px]'>
-            <div className='w-[166.22px] h-[36px] flex flex-row items-center justify-center'>
+    <div className='md:h-[711px] md:w-[881px] rounded-lg bg-white p-0 pb-20 flex flex-col gap-[20px] '>
+        <div className='md:h-[40px] md:w-[full] flex flex-row items-center mt-[24px] ml-[24px] gap-[40px]'>
+            <div className='md:w-[166.22px] md:h-[36px] flex flex-row items-center justify-center'>
                     <div className='w-[36px] h-[36px]'>
                         <img src={bitcoin} alt="bitcoin" />
                     </div>
-                    <div className='w-[130.22px] h-[28px] flex flex-row items-center justify-center text-center'>
+                    <div className='md:w-[130.22px] h-[28px] flex flex-row items-center justify-center text-center'>
                     <h1 className='text-[24px] w-[81px] h-[28.8px] text-center font-medium text-[#000000] leading-[28.8px]'>
                         {coinData ? 'Bitcoin' : 'Loading...'}
                     </h1>
@@ -59,7 +59,7 @@ const ChartCompo = () => {
 
 
 
-    <div className='w-[837px] h-[574px] gap-[24px] ml-[24px]'>
+    <div className='w-[382px] h-[391px] md:w-[837px] md:h-[574px] gap-[24px] ml-[24px]'>
         <div className='w-[568.72px] h-[66px] gap-[32px] flex flex-row'>
             <div className='w-[161px] h-[66px] flex flex-col'>
             <p className='text-[28px] font-semibold'>
@@ -81,8 +81,8 @@ const ChartCompo = () => {
             </div>                                         
             </div>
         </div>
-        <div className='w-[827px] h-[1px] bg-[#DEE1E6] mb-[32px] mt-[32px]'></div>
-        <div className='w-[837px] h-[460px]'>
+        <div className='w-[342px] md:w-[827px] h-[1px] bg-[#DEE1E6] mb-[32px] mt-[32px]'></div>
+        <div className='w-[344px] h-[216px] md:w-[837px] md:h-[460px]'>
             <TradingViewWidget/>
         </div>
     </div>

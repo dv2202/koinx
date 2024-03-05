@@ -1,8 +1,0 @@
-// Append the new script to the container
-container.current.appendChild(script);
-
-// Cleanup: remove the script when the component is unmounted
-return () => {
-  container.current.removeChild(script);
-};
-}, [])
