@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { RiArrowUpSFill } from "react-icons/ri";
+import { RiArrowDownSFill } from "react-icons/ri";
 
 const TrendingCoin = () => {
     const[trendingCoins, setTrendingCoins] = useState([]);
@@ -36,9 +38,19 @@ const TrendingCoin = () => {
                         <p className=' text-[16px] font-normal leading-[16px] text-[#828282]'>{coin.item.symbol}</p>
                         </div>
                     </div>
-                    {/* <div className='w-[40px] h-[40px] rounded-full bg-[#E5E5E5] flex items-center justify-center'>
-                        <img src={coin.item.trending_up ? '/trending-up.svg' : '/trending-down.svg'} alt="trending" className='w-[24px] h-[24px]'/>
-                    </div> */}
+                    <div className='w-[84px] h-[28px] rounded-full flex items-center justify-center'>
+                      {coin.item.trending_up ? (
+                        <div className='w-[84px] h-[28px] bg-green-500  p-[8px] rounded flex'>
+                          <RiArrowUpSFill className='text-green'/>
+                          <div className='text-black'>{`${Math.abs(coin.item.data.price_change_percentage_24h.btc.toFixed(2))}%`}</div>
+                        </div>
+                      ) : (
+                        <div className='bg-[#fdc1c1] w-[84px] h-[28px] p-1 rounded gap-1 flex items-center'>
+                          <RiArrowDownSFill className='text-[#dc2626] text-[16px]'/>
+                          <div className='w-[45px] h-[19px] text-[16px] text-center flex items-center text-[#dc2626] font-medium'>{`${Math.abs(coin.item.data.price_change_percentage_24h.btc.toFixed(2))}%`}</div>
+                        </div>
+                      )}
+                    </div>
                 </div>
             ))
         }

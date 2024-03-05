@@ -1,19 +1,22 @@
 import React from 'react';
-import TradingViewWidget from './TradingViewWidget';
+
 import { FaArrowRight } from "react-icons/fa6";
 import image2 from '../assets/asset2.png';
 import TrendingCoin from './TrendingCoin';
+import ChartCompo from './ChartCompo';
+import Sentiment from './Sentiment';
 const Home = () => {
+    
   return (
-    <div className='bg-[#ececec] w-[100vw] h-[100vh] absolute '>
-        <div className='max-w-[1328px] flex flex-col md:flex-row mx-auto gap-4 mt-[132px] '>
-            <div className='h-[711px] w-[881px] rounded-lg '>
-                <TradingViewWidget/>
+    <div className='bg-[#e2e2e2] w-[100vw]  absolute'>
+        <div className='max-w-[1328px] flex flex-col md:flex-row mx-auto gap-4 mt-[60px]'>
+            {/* Left Side */}
+            <div className='flex flex-col gap-5 '>
+                <ChartCompo/>
+                <Sentiment/>
             </div>
+            
             {/* Right Side  */}
-
-
-
 
             <div className='flex flex-col rounded-[16px] gap-[20px]'>
             <div className='w-[426px] h-[515px] p-[31px 16px 31px 16px] bg-[#0052FE] rounded-[8px] gap-[19px] flex flex-col items-center justify-center'>
@@ -29,9 +32,9 @@ const Home = () => {
                     <FaArrowRight/>
                 </div>
             </div>
-            <TrendingCoin/>
+                <TrendingCoin/>
             </div>
-        </div>
+            </div>
     </div>
   );
 };

@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.CardSlider {
+    display: flex;
+    gap: 16px; /* Adjust the value as needed */
+}

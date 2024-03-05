@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+    <nav className="bg-white w-full z-20 top-0 start-0 border-b border-gray-200">
       <div className="max-w-[1328px] flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logo} className="h-8" alt="Koinx Logo" />
