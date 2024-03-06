@@ -24,7 +24,7 @@ const Home = () => {
         <p className='text-[14px] text-[#3E5765]'>{'>>'}</p>
         <p className='w-[47px] h-[17px] text-[14px] font-medium text-black'>{Step}</p>
       </div>
-      <div className='max-w-[1328px] mx-auto flex flex-col gap-4 '>
+      <div className='max-w-[1328px] mx-auto flex flex-col md:flex-row gap-4 '>
         {/* Left Side */}
         <div className='flex flex-col gap-5 '>
           <ChartCompo />
@@ -35,7 +35,8 @@ const Home = () => {
           <Team/>
         </div>
         {/* Right Side  */}
-        <div className='flex flex-col rounded-[16px] gap-[20px] w-[379px] h-[384px] md:ml-0 ml-1 top-0 md:w-[379px] md:h-[384px] md:p-[31px 16px 31px 16px] bg-[#0052FE] md:rounded-[8px] md:gap-[19px] md:flex md:flex-col items-center justify-center'>
+        <div className='flex flex-col gap-3'>
+        <div className='flex flex-col  rounded-[16px] gap-[20px] w-[379px] h-[384px] md:ml-0 ml-1 top-0 md:w-[426px] md:h-[515px] md:p-[31px 16px 31px 16px] bg-[#0052FE] md:rounded-[8px] md:gap-[19px] md:flex md:flex-col items-center justify-center'>
           <div className='w-[327px] h-[182px] gap-[14px] flex flex-col items-center justify-center'>
             <h2 className='w-[359px] h-[40px] md:w-[268px] md:h-[80px] text-white leading-10 text-center font-medium text-[24px]'>Get Started with KoinX for FREE</h2>
             <p className='w-[359px] md:w-[327px] md:h-[68px] text-white font-inter text-[14px] font-medium leading-6 text-center'>With our range of features that you can equip for free,
@@ -47,9 +48,10 @@ const Home = () => {
             <div>Get Started for FREE</div>
             <FaArrowRight />
           </div>
-        </div>
+          </div>
           <TrendingCoin />
-      </div>
+          </div>
+        </div>
       <div className="md:w-full md:mt-[40px] w-full md:block hidden">
         <Footer />
       </div>
