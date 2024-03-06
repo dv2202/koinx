@@ -42,12 +42,12 @@ const TrendingCoin = () => {
                       {coin.item.trending_up ? (
                         <div className=' bg-green-500  w-[84px] h-[28px] p-3 rounded gap-1 flex items-center'>
                           <RiArrowUpSFill className='text-green'/>
-                          <div className='text-black'>{`${Math.abs(coin.item.data.price_change_percentage_24h.btc.toFixed(2))}%`}</div>
+                          <div className='text-black'>{`${Math.abs(coin.item.data.price_change_percentage_24h.btc.toFixed(1))}%`}</div>
                         </div>
                       ) : (
                         <div className='bg-[#fdc1c1] w-[84px] h-[28px] p-3 rounded gap-1 flex items-center'>
                           <RiArrowDownSFill className='text-[#dc2626] text-[16px]'/>
-                          <div className='w-[45px] h-[19px] text-[16px] text-center flex items-center text-[#dc2626] font-medium'>{`${Math.abs(coin.item.data.price_change_percentage_24h.btc.toFixed(2))}%`}</div>
+                          <div className='w-[45px] h-[19px] text-[16px] text-center flex items-center text-[#dc2626] font-medium'>{`${Math.abs(coin.item.data.price_change_percentage_24h.btc.toFixed(1))}%`}</div>
                         </div>
                       )}
                     </div>

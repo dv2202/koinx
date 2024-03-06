@@ -6,7 +6,7 @@ import TeamMember from './TeamMember'
 
 const Team = () => {
   return (
-    <div className="w-[384px] h-fit md:w-[881px] md:h-[776px] rounded-lg space-y-5 px-5 bg-white  p-4">
+    <div className="w-[384px] h-fit md:w-[881px] md:h-[776px] rounded-lg space-y-5 md:px-5 bg-white p-2 md:p-4">
         <div className="flex flex-row justify-start w-full">
           <Heading as="h4">Team</Heading>
         </div>

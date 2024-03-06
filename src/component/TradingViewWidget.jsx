@@ -1,7 +1,11 @@
 import React, { useEffect, useRef, memo } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function TradingViewWidget() {
   const container = useRef();
+  const location = useLocation();
+  const path = location.pathname.split('/');
+  const defaultSymbol = location.pathname.includes('bitcoin') ? 'CRYPTO:BTCUSD' : 'FOREXCOM:ETHUSD';
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -11,7 +15,7 @@ function TradingViewWidget() {
     script.innerHTML = `
       {
         "autosize": true,
-        "symbol": "NASDAQ:AAPL",
+        "symbol": "${defaultSymbol}",
         "interval": "D",
         "timezone": "Etc/UTC",
         "theme": "light",

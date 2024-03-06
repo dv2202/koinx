@@ -8,9 +8,10 @@ import ChartCompo from './ChartCompo';
 import Sentiment from './Sentiment';
 import AboutBitcoin from './AboutBitcoin'
 import Tokenomics from './Tokenomics';
-
 const Home = () => {
-    
+
+  
+
   return (
     <div className='bg-[#e2e2e2] w-[100vw]  absolute overflow-x-hidden'>
         <div className='max-w-[1328px] flex  md:flex-row mx-auto  gap-4 mt-[60px]'>
@@ -26,7 +27,7 @@ const Home = () => {
             
             {/* Right Side  */}
 
-            <div className=' flex flex-col rounded-[16px] gap-[20px] md:ml-0 ml-1 sticky top-0'>
+            <div className=' flex flex-col rounded-[16px] gap-[20px] md:ml-0 ml-1 top-0'>
                 <div className='w-[379px] h-[384px] md:w-[426px] md:h-[515px] p-[31px 16px 31px 16px] bg-[#0052FE] rounded-[8px] gap-[19px] flex flex-col items-center justify-center'>
                     <div className='w-[327px] h-[182px] gap-[14px] flex flex-col items-center justify-center'>
                         <h2 className='w-[359px] h-[40px] md:w-[268px] md:h-[80px] text-white leading-10 text-center font-medium text-[24px]'>Get Started with KoinX for FREE</h2>
