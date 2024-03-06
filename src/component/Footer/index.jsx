@@ -5,18 +5,18 @@ import Cart from './Cart'
 
 const Footer = () => {
   return (
-    <div className="flex flex-row justify-center w-full bg-white">
+    <div className="flex flex-row w-full bg-white">
         <div className="flex flex-col w-full gap-px p-[51px] bg-white-A700">
-          <div className="flex flex-col items-center justify-start w-full mt-4 pb-[30px] gap-5 mx-auto max-w-[1330px]">
-            <div className="flex flex-row justify-start w-[98%]">
+          <div className="flex flex-col items-center justify-start w-full mt-4 pb-[30px] gap-5 mx-auto max-w-full">
+            <div className="flex flex-row justify-start md:w-[93%]">
               <Heading as="h2" className="mt-1 !text-gray-900_01">
                 You May Also Like
               </Heading>
             </div>
             <div className="flex flex-row justify-center w-full">
               <div className="flex flex-row justify-center items-center w-full">
-                <Img src="images/img_button_next_slide.svg" alt="bnb_one" className="h-[44px] z-[1]" />
-                <div className="flex flex-row w-[99%] ml-[-8px] gap-2.5">
+                <div className="flex flex-row md:w-[97%] ml-[-8px] gap-2.5">
+                  <Img src="images/img_button_next_slide.svg" alt="bnb_one" className="h-[44px] my-[58px]" />
                     <Cart name={'BNB'} percentChange={'+0.52%'} price={'$319.34'} image={<Img src="images/img_202401031434_svg.svg" alt="bnb_two" className="h-[60px] mb-1" />}/>
                     <Cart name={'SOL'} percentChange={'-2.89%'} price={'$109.33'} image={<Img src="images/img_202401031434_svg.svg" alt="image" className="h-[60px] mb-1" />} direction={'!text-red-300'}/>
                     <Cart name={'XRP'} percentChange={'+0.78%'} price={'$0.634810'} image={<Img src="images/img_202401031434_svg.svg" alt="image" className="h-[60px] mb-1" />}/>
@@ -31,16 +31,16 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-start w-full mb-4 pb-[30px] gap-5 mx-auto max-w-[1330px]">
-            <div className="flex flex-row justify-start w-[98%]">
+          <div className="flex flex-col items-center justify-start w-full mb-4 pb-[30px] gap-5 mx-auto max-w-full">
+            <div className="flex flex-row justify-start md:w-[93%]">
               <Heading as="h3" className="mt-1 !text-gray-900_01">
                 Trending Coins
               </Heading>
             </div>
             <div className="flex flex-row justify-center w-full">
               <div className="flex flex-row justify-center items-center w-full">
-                <Img src="images/img_button_next_slide.svg" alt="bnb_one" className="h-[44px] z-[1]" />
-                <div className="flex flex-row w-[99%] ml-[-8px] gap-2.5">
+                <div className="flex flex-row md:w-[97%] ml-[-8px] gap-2.5">
+                  <Img src="images/img_button_next_slide.svg" alt="bnb_one" className="h-[44px] my-[58px]" />
                     <Cart name={'BTC'} percentChange={'+0.10%'} price={'$45,332.83'} image={<Img
                         src="images/img_202401031434_svg.svg"
                         alt="btc_two"

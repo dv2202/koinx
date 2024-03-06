@@ -10,7 +10,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    
+    <>
       <div className='bg-[#e2e2e2] w-[100%] h-[100%] overflow-x-hidden'>
         <Navbar />
         <Routes>
@@ -19,7 +19,7 @@ function App() {
           <Route path='/ethereum' element={<Home />} />
         </Routes>
       </div>
-    
+    </>
   );
 }
 

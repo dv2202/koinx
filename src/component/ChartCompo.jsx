@@ -11,13 +11,14 @@ const ChartCompo = () => {
     const [previousUsd24hVol, setPreviousUsd24hVol] = useState(null);
     const location = useLocation();
     const path = location.pathname.split('/');
-    let defaultSymbol = path[1] === '' ? 'bitcoin' : path[1];
+    const defaultSymbol = path[1] === '' ? 'bitcoin' : path[1] ;
+    console.log(path[1])
     useEffect(() => {
       const fetchData = async () => {
         try {
           const response = await axios.get('https://api.coingecko.com/api/v3/simple/price', {
             params: {
-              ids: defaultSymbol,
+              ids: path[1] === '' ? 'bitcoin' : path[1],
               vs_currencies: 'usd,inr',
               include_24hr_vol: true,
             },
@@ -48,7 +49,7 @@ const ChartCompo = () => {
     }, [coinData, defaultSymbol]);
 
   return (
-    <div className='md:h-[711px] md:w-[881px] rounded-lg bg-white p-0 pb-20 flex flex-col gap-[20px] '>
+    <div className='md:h-[711px] md:w-[881px] rounded-lg bg-white p-0 md:pb-20 flex flex-col gap-[20px] '>
         <div className='md:h-[40px] md:w-[full] flex flex-row items-center mt-[24px] ml-[24px] gap-[40px]'>
             <div className='md:w-[166.22px] md:h-[36px] flex flex-row items-center justify-center'>
                     <div className='w-[36px] h-[36px]'>
