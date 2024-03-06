@@ -26,7 +26,7 @@ const TrendingCoin = () => {
 
 
   return (
-    <div className=" w-[411px] h-[225px] md:w-[427px] md:h-[min-content] bg-white p-[24px] rounded-[8px] gap-[24px]">
+    <div className=" w-[405px] h-[250px] md:w-[427px] mb-3 md:h-[min-content] bg-white p-[24px] rounded-[8px] gap-[24px]">
         <h3 className='md:w-[246px] md:h-[29px] font-inter font-semibold text-[24px] leading-[28.8px]'>Trending Coins (24h)</h3>
         {
             trendingCoins.slice(0,3).map((coin,index)=>(

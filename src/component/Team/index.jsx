@@ -37,7 +37,7 @@ const Team = () => {
                 className="w-full object-cover rounded-md"
               />} content={'Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet nec neque sed pellentesque viverra. Consectetur proin amet ut id facilisi quis consectetur. Tellus gravida ultricies feugiat sed eu egestas dolor est ipsum. Malesuada etiammi gravida praesent interdu'}/>
           </div>
-          <div className='md:hidden block'>
+          <div className='md:hidden block w-[384px] overflow-hidden'>
               <Footer/>
           </div>
         </div>
